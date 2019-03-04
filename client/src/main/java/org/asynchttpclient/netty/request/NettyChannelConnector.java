@@ -41,10 +41,9 @@ public class NettyChannelConnector {
     private volatile int i = 0;
 
     public NettyChannelConnector(InetAddress localAddress,//
-            List<InetSocketAddress> remoteAddresses,//
-            AsyncHandler<?> asyncHandler,//
-            AsyncHttpClientState clientState,//
-            AsyncHttpClientConfig config) {
+                                 List<InetSocketAddress> remoteAddresses,//
+                                 AsyncHandler<?> asyncHandler,//
+                                 AsyncHttpClientState clientState) {
         this.localAddress = localAddress != null ? new InetSocketAddress(localAddress, 0) : null;
         this.remoteAddresses = remoteAddresses;
         this.asyncHandlerExtensions = toAsyncHandlerExtensions(asyncHandler);
