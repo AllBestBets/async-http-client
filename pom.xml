@@ -444,9 +444,9 @@
   </dependencies>
   <properties>
     <surefire.redirectTestOutputToFile>true</surefire.redirectTestOutputToFile>
-    <source.property>1.8</source.property>
-    <target.property>1.8</target.property>
-    <netty.version>4.1.42.Final</netty.version>
+    <source.property>1.10</source.property>
+    <target.property>1.10</target.property>
+    <netty.version>4.1.25.Final</netty.version>
     <slf4j.version>1.7.26</slf4j.version>
     <reactive-streams.version>1.0.2</reactive-streams.version>
     <activation.version>1.2.0</activation.version>
@@ -455,8 +455,8 @@
     <rxjava2.version>2.2.12</rxjava2.version>
     <logback.version>1.2.3</logback.version>
     <testng.version>6.13.1</testng.version>
-    <jetty.version>9.4.18.v20190429</jetty.version>
-    <tomcat.version>9.0.26</tomcat.version>
+    <jetty.version>9.4.7.v20170914</jetty.version>
+    <tomcat.version>8.5.21</tomcat.version>
     <commons-io.version>2.6</commons-io.version>
     <commons-fileupload.version>1.3.3</commons-fileupload.version>
     <privilegedaccessor.version>1.2.2</privilegedaccessor.version>
