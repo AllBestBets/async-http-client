@@ -56,7 +56,7 @@ public abstract class TimeoutTimerTask implements TimerTask {
 
     protected void appendRemoteAddress(StringBuilder sb) {
         InetSocketAddress remoteAddress = timeoutsHolder.remoteAddress();
-        sb.append(remoteAddress.getHostName());
+        sb.append(remoteAddress.getHostString());
         if (!remoteAddress.isUnresolved()) {
             sb.append('/').append(remoteAddress.getAddress().getHostAddress());
         }

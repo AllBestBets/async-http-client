@@ -34,7 +34,7 @@ public enum RequestHostnameResolver {
 
     public Future<List<InetSocketAddress>> resolve(NameResolver<InetAddress> nameResolver, InetSocketAddress unresolvedAddress, AsyncHandlerExtensions asyncHandlerExtensions) {
 
-        final String hostname = unresolvedAddress.getHostName();
+        final String hostname = unresolvedAddress.getHostString();
         final int port = unresolvedAddress.getPort();
         final Promise<List<InetSocketAddress>> promise = ImmediateEventExecutor.INSTANCE.newPromise();
 
